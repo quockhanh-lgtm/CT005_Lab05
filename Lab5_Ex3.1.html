@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lợi ích của công nghệ số trong học tập</title>
+	<style>
+		:root {
+			--blue: #0d49c9;
+			--red: #ff3d36;
+			--ink: #080808;
+			--lavender: #d9d4ff;
+			--line: #60558a;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			min-width: 320px;
+			color: var(--ink);
+			font-family: Arial, "Segoe UI", sans-serif;
+			background-color: var(--blue);
+			background-image:
+				linear-gradient(60deg, transparent 49.7%, var(--red) 49.7%, var(--red) 50.3%, transparent 50.3%),
+				linear-gradient(120deg, transparent 49.7%, var(--red) 49.7%, var(--red) 50.3%, transparent 50.3%),
+				linear-gradient(var(--red) 2px, transparent 2px);
+			background-size: 152px 100px, 152px 100px, 100% 52px;
+			background-position: center top;
+		}
+
+		.page {
+			width: min(900px, calc(100% - 28px));
+			margin: 42px auto 64px;
+		}
+
+		.panel {
+			border-radius: 38px;
+			background: #fff;
+			box-shadow: 0 10px 0 rgba(0, 26, 108, .12);
+		}
+
+		.hero {
+			padding: clamp(28px, 6vw, 58px) clamp(20px, 6vw, 66px);
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			color: var(--blue);
+			font-size: clamp(2.3rem, 7vw, 5.5rem);
+			line-height: .98;
+			letter-spacing: .02em;
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+
+		.video-section {
+			margin-top: 42px;
+			padding: clamp(26px, 5vw, 46px);
+		}
+
+		.video-section h2 {
+			margin: 0 0 22px;
+			color: var(--blue);
+			font-size: clamp(1.45rem, 3vw, 2.2rem);
+			text-align: center;
+		}
+
+		.video-frame {
+			overflow: hidden;
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			border-radius: 18px;
+			background: #101010;
+		}
+
+		.video-frame iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+        .video-section iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+		.dots {
+			display: flex;
+			gap: 14px;
+			margin: 16px 0 20px 18px;
+		}
+
+		.dot { width: 25px; height: 25px; border-radius: 50%; background: var(--red); }
+		.dot:last-child { background: #fff; }
+
+		.infographic {
+			padding: clamp(12px, 3vw, 24px);
+			text-align: center;
+		}
+
+		.infographic img {
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 26px;
+		}
+
+		.source-link {
+			display: block;
+			margin-top: 28px;
+			color: var(--blue);
+			font-size: .95rem;
+			text-align: center;
+		}
+
+		@media (max-width: 600px) {
+			.page { margin-top: 20px; }
+			.panel { border-radius: 26px; }
+			.infographic img { border-radius: 18px; }
+		}
+	</style>
+</head>
+<body>
+	<main class="page">
+		<header class="panel hero">
+			<h1>Lợi ích của<br>Công nghệ số<br>trong học tập</h1>
+		</header>
+
+		<section class="panel video-section" aria-labelledby="video-title">
+			<h2 id="video-title">Video: Công nghệ số trong học tập</h2>
+			<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/7K383vlI7jE?si=6AV3Uw3Fbggcf_s6"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
+			<a class="source-link" href="https://youtu.be/7K383vlI7jE?si=UpmCKm4zkhNbe3FG" target="_blank" rel="noopener noreferrer">Mở video trên YouTube</a>
+		</section>
+
+		<div class="dots" aria-hidden="true"><span class="dot"></span><span class="dot"></span></div>
+
+		<section class="panel infographic" aria-label="Infographic về lợi ích của công nghệ số trong học tập">
+			<img src="Lab05_Ex2.1.png" alt="Infographic: Lợi ích của công nghệ số trong học tập">
+			<p class="source-link"> Infographic được tạo bằng Canva AI, sử dụng cho mục đích học tập.
+    Mã nguồn HTML được tạo và chỉnh sửa với sự hỗ trợ của GitHub Copilot.
+    Video được liên kết từ YouTube và thuộc quyền sở hữu của tác giả/kênh đăng tải.</p>
+		</section>
+	</main>
+</body>
+</html>
